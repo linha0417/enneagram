@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const messageElement = document.getElementById('message');
 
     // 간단한 유효성 검사
-    // 아이디와 비빌번호의 입력값과 설정된 아이디와 비밀번호가 일치하면(둘다 일치해야함)
+    // 아이디와 비빌번호의 입력값과 설정된 아이디와 비밀번호가 일치하면(둘다 일치해야함.)
     if (userId === correctUsername && password === correctPassword) {
       // 로그인 성공 문자를 넣어주고, 색깔을 초록색으로 바꾼다.
       // messageElement.textContent = 'Login successful!';
