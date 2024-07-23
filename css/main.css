@@ -1,0 +1,47 @@
+body {
+  background-image: url(../login_bg2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  height: 800px;
+  /* background-color: red; */
+  /* width값 없이 margin: auto 안된다. */
+  margin: auto;
+  width: 600px;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  /* h1 텍스트, 이미지, 버튼 가운데 정렬 */
+  text-align: center; 
+}
+
+.enneagram_image {
+  margin: 40px;
+}
+
+.button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  background-color: rgb(62, 130, 255);
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: rgb(18, 90, 224);
+  box-shadow: 1px 1px 6px rgb(27, 54, 105) inset;
+}

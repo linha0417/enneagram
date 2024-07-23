@@ -1,0 +1,36 @@
+body {
+  background-image: url(../login_bg2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  background-color: white;
+  width: 600px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px gray;
+}
+
+.precautions_wrap {
+  margin: 40px;
+}
+
+.title {
+  margin-bottom: 40px;
+}
+
+.p {
+  font-weight: 600;
+}
+
+.button_wrap {
+  display: flex;
+  justify-content: end;
+}

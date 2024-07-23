@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/index.css">
+  <title>login</title>
+</head>
+<body>
+  <div id="container">
+    <h1>애니어그램 성격유형</h1>
+    <!-- 주소창에 정보가 노출이 되지 않게 하려면 form태그에 method="POST" 추가 -->
+    <form id="login_form" method="POST">
+      <div id="contents">
+        <h2>login</h2>
+        <div class="id_input_wrap">
+          <input class="input user_id" name="user_id" type="text" placeholder="아이디를 입력하세요." required>
+        </div>
+        <div class="pass_input_wrap">
+          <input class="input user_password" name="user_password" type="password" placeholder="비밀번호를 입력하세요." required>
+        </div>
+        <div class="login_button_wrap">
+          <button class="login_button" type="submit">로그인</button>
+        </div>
+        <div id="message"></div>
+      </div>
+    </form>
+  </div>
+  <script src="../js/index.js"></script>
+</body>
+</html>

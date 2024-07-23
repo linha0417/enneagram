@@ -1,0 +1,34 @@
+.button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  background-color: rgb(62, 130, 255);
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: rgb(18, 90, 224);
+  box-shadow: 1px 1px 6px rgb(37, 75, 146) inset;
+}
+
+.button_back {
+  font-weight: 600;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  background-color: rgb(212, 212, 212);
+  box-shadow: gray;
+  cursor: pointer;
+}
+
+.button_back:active {
+  color: white;
+  background-color: gray;
+  box-shadow: 1px 1px 6px rgb(80, 80, 80) inset;
+}
+

@@ -1,0 +1,138 @@
+#container {
+  /* background-color: red; */
+  width: 600px;
+  margin: auto;
+}
+
+.title {
+  height: 30px;
+  color: white;
+  background-color: rgb(62, 130, 255);
+  
+}
+
+.number {
+  width: 40px
+}
+
+.question {
+  margin-top: 50px;
+  width: 560px;
+}
+
+.checkbox_wrap {
+  display: flex;
+  text-align: center;
+  height: 100px;
+}
+
+.input_wrap {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.input_wrap label {
+  margin-left: 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.question_item {
+  margin-bottom: 50px;
+}
+
+
+/* fill.css 또는 common.css */
+.question_item p {
+  font-size: large;
+  font-weight: bold;
+  white-space: pre-line;
+
+  /* 첫 줄 들여쓰기 */
+  margin-left: 1em;
+
+  /* 번호 뒤부터 줄바꿈 시 들여쓰기 */
+  text-indent: -1.2em;
+
+  /* 첫 줄 들여쓰기와 균형을 맞추기 위해 추가 */
+  padding-left: 1em; 
+}
+
+.modal {
+  display: flex; 
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: white;
+  width: 220px;
+  height: 120px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 1px 1px 6px gray;
+  /* display: block 으로 하면 align-items: center가 먹히지 않음 */
+  align-items: center;
+}
+
+p {
+  font-weight: 600;
+}
+
+.modal_content {
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+
+.close_button {
+  width: 60px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  background-color: rgb(62, 130, 255);
+  /* box-shadow: 1px 1px 2px rgb(45, 92, 179); */
+  cursor: pointer;
+}
+
+.close_button:active {
+  background-color: rgb(18, 90, 224);
+  box-shadow: 1px 1px 6px rgb(27, 54, 105) inset;
+}
+
+.submit_button {
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  background-color: rgb(62, 130, 255);
+  box-shadow: 1px 1px 6px rgb(45, 92, 179);
+  cursor: pointer;
+}
+
+.input_wrap:hover {
+  background-color: rgb(242, 248, 253);
+}
+
+.label {
+  display: inline-block;
+  max-width: 200px; /* 필요에 따라 너비 조정 */
+  white-space: normal; /* 줄바꿈 허용 */
+  word-wrap: break-word; /* 긴 단어를 줄바꿈 */
+  line-height: 1.5; /* 줄 간격 설정 */
+}
+
+.pagination {
+  display: flex;
+  justify-content: end;
+}
+
+.button_wrap {
+  margin-right: 45px;
+}

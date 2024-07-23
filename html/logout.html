@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/logout.css">
+  <title>logout</title>
+</head>
+<body>
+  <div id="container">
+    <div id="contents">
+      <h2 id="title">로그아웃 하시겠습니까?</h2>
+      <div id="button_wrap">
+        <div id="button_contents">
+          <button id="logout_button">로그아웃</button>
+          <button id="no_button" >아니오</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // 로그인 상태 확인
+      if (sessionStorage.getItem('isLoggedIn') !== 'true') {
+        window.location.href = 'login.html'; // 로그인 페이지로 리다이렉트
+      }
+
+      // 로그아웃 버튼 클릭 시
+      document.getElementById('logout_button').addEventListener('click', function() {
+        sessionStorage.removeItem('isLoggedIn'); // 로그인 상태 제거
+        window.location.href = 'login.html'; // 로그인 페이지로 리다이렉트
+      });
+
+      // 아니오 버튼 클릭 시 메인 화면으로 이동
+      document.getElementById('no_button').addEventListener('click', function() {
+        window.location.href = 'main.html';
+      })
+    });
+  </script>
+</body>
+</html>

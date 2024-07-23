@@ -1,0 +1,74 @@
+/* body {
+  background-image: url(../light1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+} */
+
+#container {
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#title_result {
+  width: 600px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+
+.table_wrap {
+  margin-top: 50px;
+}
+
+.result-table {
+  background-color: white;
+  width: 600px;
+  border: none;
+  border-collapse: collapse;
+  box-shadow: 1px 1px 6px rgb(187, 187, 187);
+} 
+.result-table th, .result-table td {
+  width: 300px;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  border: 1px solid #a8a8a8;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(62, 130, 255);
+}
+
+td {
+  border: 1px solid #a8a8a8;
+}
+
+#source {
+  font-size: x-small;
+  color: rgb(165, 165, 165);
+}
+
+#print_button_wrap {
+  margin-top: 40px;
+  display: flex;
+  justify-content: end;
+}
+
+
+/* 더블은 굵기가 어느정도 되야 된다. */
+.highest_score_cell {
+  border-top: 4px double black;
+  font-weight: 600;
+  background-color: rgb(209, 209, 209);
+}
+
+.highest_type_cell {
+  border-top: 4px double black;
+  font-weight: 600;
+  background-color: rgb(209, 209, 209);
+}

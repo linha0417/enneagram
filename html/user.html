@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/user.css">
+  <title>user</title>
+</head>
+<body>
+  <div id="container">
+    <div id="info_wrap">
+      <h2 id="info">개인정보</h2>
+      <div id="contents">
+        <ul id="input_list">
+          <li>
+              <input type="text" class="input" placeholder="이름을 입력하세요">
+          </li>
+          <li>
+            <select name="birth_year" id="birth_year" class="year">
+              <option disabled selected>출생 연도</option>
+            </select>
+            
+            <select name="birth_month" id="birth_month" class="month">
+              <option disabled selected>월</option>
+            </select>
+            
+            <select name="birth_date" id="birth_date" class="date">
+              <option disabled selected>일</option>
+            </select>
+          </li>
+          <li>
+            <div id="radio_wrap">
+              <span>성별: </span>
+              <input id="man" class="input_man" type="radio" name="gender" value="남자">
+              <label for="man">남자</label>
+              <!-- name 값을 같게 해야 둘중 하나 선택이 된다. -->
+              <input id="woman" class="input_woman" type="radio" name="gender" value="여자">
+              <label for="woman">여자</label>
+            </div>
+          </li>
+          <li>
+          </li>
+          <div id="next_button_wrap">
+            <button id="next_button">다음</button>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="../js/user.js"></script>
+</body>
+</html>

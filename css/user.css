@@ -1,0 +1,87 @@
+body {
+  background-image: url(../login_bg2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#container {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contents {
+  margin: auto;
+  width: 300px;
+  height: 250px;
+  background-color: white;
+  box-shadow: 1px 1px 6px gray;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#info {
+  margin: auto;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+li {
+  list-style: none;
+  margin: 10px;
+}
+
+#input_list {
+  list-style: none;
+  padding: 0;
+}
+
+.input {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+.year, .month, .date {
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  
+}
+
+.month, .date {
+  width: 56px;
+}
+
+#next_button_wrap {
+  display: flex;
+  justify-content: end;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+#next_button {
+  width: 60px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  background-color: rgb(62, 130, 255);
+  cursor: pointer;
+}
+
+#next_button:active {
+  background-color: rgb(18, 90, 224);
+  box-shadow: 1px 1px 6px rgb(37, 75, 146) inset;
+}

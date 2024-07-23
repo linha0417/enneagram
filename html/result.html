@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/result.css">
+  <title>결과 페이지</title>
+
+</head>
+<body>
+  <div id="container">
+    <div class="contents">
+      <h1 id="title_result">애니어그램 성격유형 검사 결과</h1>
+      <div id="info">
+        <p>이름: <span id="name"></span></p>
+        <p>출생연도: 
+          <span id="birth_year"></span>.
+          <span id="birth_month"></span>
+          <span id="birth_month"></span>.
+          <span id="birth_date"></span>
+        </p>
+        <p>성별: <span id="gender"></span></p>
+        
+      </div>
+      <div class="table_wrap">
+        <table class="result-table">
+          <thead>
+            <tr>
+              <th>유형</th>
+              <th>점수</th>
+            </tr>
+          </thead>
+          <tbody id="result-body">
+            <!-- 점수가 표시될 자리 -->
+          </tbody>
+        </table>
+        
+      </div>
+      <div id="print_button_wrap">
+        <input class="print_button" type="button" value="인쇄하기" id="print" onclick="window.print()"/>
+      </div>
+    </div>
+  </div>
+  <!-- <span id="source">작가 pikisuperstar 출처 Freepik</span> -->
+  <script src="../js/result.js"></script>
+</body>
+</html>
