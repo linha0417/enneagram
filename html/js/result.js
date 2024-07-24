@@ -9,15 +9,15 @@ document.addEventListener('DOMContentLoaded', function() {
   /*  personalityTypes.js 의 데이터랑 다름 여기서는 함수내에서 사용하는 변수임
   결과페이지 화면에서 출력될 내용임. */
   const personalityTypes = [
-    {number: "1", type: '1번 유형 (완벽주의자)'},
-    {number: "2", type: '2번 유형 (조력자)'},
-    {number: "3", type: '3번 유형 (성취주의자)'},
-    {number: "4", type: '4번 유형 (창조자)'},
-    {number: "5", type: '5번 유형 (관찰자)'},
-    {number: "6", type: '6번 유형 (조정자)'},
-    {number: "7", type: '7번 유형 (기획자)'},
-    {number: "8", type: '8번 유형 (지도자)'},
-    {number: "9", type: '9번 유형 (평화주의자)'}
+    {number: "1", type: '1번 유형'},
+    {number: "2", type: '2번 유형'},
+    {number: "3", type: '3번 유형'},
+    {number: "4", type: '4번 유형'},
+    {number: "5", type: '5번 유형'},
+    {number: "6", type: '6번 유형'},
+    {number: "7", type: '7번 유형'},
+    {number: "8", type: '8번 유형'},
+    {number: "9", type: '9번 유형'}
   ];
 
 

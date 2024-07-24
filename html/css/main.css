@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-image: url(../images/login_bg2.jpg);
   background-repeat: no-repeat;
@@ -44,4 +49,43 @@ body {
 .button:active {
   background-color: rgb(18, 90, 224);
   box-shadow: 1px 1px 6px rgb(27, 54, 105) inset;
+}
+
+/* 미디어 쿼리 추가 */
+@media (max-width: 1200px) {
+  #container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  #container {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+  .enneagram_image {
+    margin: 20px;
+    width: 300px;
+  }
+  .button {
+    width: 120px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  #container {
+    width: 95%;
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+  }
+  .enneagram_image {
+    margin: 10px;
+  }
+  .button {
+    width: 100px;
+    height: 35px;
+  }
 }

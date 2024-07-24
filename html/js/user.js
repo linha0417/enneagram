@@ -17,7 +17,7 @@ birthYearEl.addEventListener('focus', function() {
     // true로 설정해서 옵션이 생성되었음을 표시하고
     isYearOptionExisted = true;
     // 옵션 생성하는 반복문 만듦.
-    for (let i = 1910; i <= 2024; i++) {
+    for (let i = 1940; i <= 2024; i++) {
       // option 태그 만들어서 이름 붙이고
       const yearOption = document.createElement('option');
       /* option 태그에 속성을 만들고 속성값을 i 로 전달하고 2024까지 출력시킴. */

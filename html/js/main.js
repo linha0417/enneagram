@@ -4,7 +4,7 @@ import options from './options_data.js'; // 5가지 답변
 
 
 
-const questionsPerPage = 10; // 한 페이지에 10개의 질문
+const questionsPerPage = 1; // 한 페이지에 10개의 질문
 let currentPage = 1; // 현재 페이지 번호
 const scores = {}; // 각 유형별 점수를 저장하기 위한 빈 객체
 console.log(scores);
@@ -54,6 +54,7 @@ function createCheckboxGroup(questionIndex) {
     const input = document.createElement('input');
     input.className = 'input';
     
+      
 
     // input type, name, id, value html input 태그의 속성들을 자바스크립트에서도 설정가능
     // input 태그 타입 설정
@@ -100,6 +101,8 @@ function createCheckboxGroup(questionIndex) {
         // 선택한 답변 점수를 저장 현재(해당)번호의 질문을 담아둔 selectedAnsers에 점수 할당
         selectedAnswers[questionIndex] = score;
       }
+
+      
     });
 
     const label = document.createElement('label');

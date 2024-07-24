@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-image: url(../images/login_bg2.jpg);
   background-repeat: no-repeat;
@@ -28,9 +33,61 @@ body {
 
 .p {
   font-weight: 600;
+  margin-bottom: 10px;
+  word-break: keep-all;
+}
+
+li {
+  margin-bottom: 10px;
+  word-break: keep-all;
 }
 
 .button_wrap {
   display: flex;
   justify-content: end;
+}
+
+/* 미디어 쿼리 추가 */
+@media (max-width: 768px) {
+  #container {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .precautions_wrap {
+    margin: 20px;
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  .button_wrap {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  #container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .precautions_wrap {
+    margin: 10px;
+  }
+
+  .title {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+  }
+
+  .p {
+    font-size: 0.9em;
+  }
+
+  .button_wrap {
+    flex-direction: column;
+    align-items: center;
+  }
 }
