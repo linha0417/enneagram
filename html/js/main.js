@@ -53,6 +53,8 @@ function createCheckboxGroup(questionIndex) {
     // html 문서에 input 태그 생성 후 이름 붙임
     const input = document.createElement('input');
     input.className = 'input';
+    
+    
 
     // input type, name, id, value html input 태그의 속성들을 자바스크립트에서도 설정가능
     // input 태그 타입 설정

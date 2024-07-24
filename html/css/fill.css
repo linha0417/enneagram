@@ -20,6 +20,7 @@
   width: 560px;
 }
 
+/* 5가지 답변  */
 .checkbox_wrap {
   display: flex;
   text-align: center;
@@ -36,6 +37,10 @@
   margin-left: 5px;
   display: inline-block;
   cursor: pointer;
+}
+
+.input {
+  display: inline-block;
 }
 
 .question_item {
