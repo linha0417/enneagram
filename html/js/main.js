@@ -54,7 +54,6 @@ function createCheckboxGroup(questionIndex) {
     const input = document.createElement('input');
     input.className = 'input';
     
-    
 
     // input type, name, id, value html input 태그의 속성들을 자바스크립트에서도 설정가능
     // input 태그 타입 설정
@@ -109,7 +108,7 @@ function createCheckboxGroup(questionIndex) {
     label.htmlFor = input.id;
     // options 배열의 label에 <br> 추가하고 라벨을 html 문서에 넣는다.(줄 바꿈 하는 방법)
     label.innerHTML = option.label; 
-
+    
     inputWrap.appendChild(input);
     inputWrap.appendChild(label);
     checkboxWrap.appendChild(inputWrap);

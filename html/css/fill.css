@@ -40,7 +40,13 @@
 }
 
 .input {
-  display: inline-block;
+  display: flex;
+  margin: auto;
+}
+
+.radio_wrap {
+  width: 108px;
+  height: 13px;
 }
 
 .question_item {
