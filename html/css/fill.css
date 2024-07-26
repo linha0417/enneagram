@@ -121,6 +121,7 @@ h2 {
 
 
 .question_text {
+  padding-right: 10px;
   margin-bottom: 40px;
 }
 
@@ -195,12 +196,21 @@ p {
 
 .pagination {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  text-align: center;
 }
 
 .button_wrap {
-  margin-right: 45px;
+  /* margin-right: 45px; */
 }
+
+#page_info_wrap {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 
 
 /* 미디어 쿼리 : 화면 너비 768px 이하일 때 스타일 조정*/
