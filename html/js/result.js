@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // 쿠키에서 값 불러오기
 document.addEventListener('DOMContentLoaded', function()  {
-  document.getElementById('name').innerText = getCookie('name');
+  document.querySelector('name').innerText = getCookie('name');
   document.getElementById('birth_year').innerText = getCookie('birthYear');
   document.getElementById('birth_month').innerText = getCookie('birthMonth');
   document.getElementById('birth_date').innerText = getCookie('birthDate');

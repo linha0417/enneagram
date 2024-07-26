@@ -146,11 +146,11 @@ const nextButton = document.getElementById('next_button').addEventListener('clic
 
   
   // 쿠기에 값 저장
-  document.cookie = `name=${nameInput.value.trim()}; path=/ `;
+  document.cookie = `name=${nameInput.value.trim()}; path=/`;
   document.cookie = `birthYear=${selectYear.value}; path=/`;
   document.cookie = `birthMonth=${selectMonth.value}; path=/`;
   document.cookie = `birthDate=${selectDate.value}; path=/`;
-  document.cookie = `gender=${gender}; paht=/`;
+  document.cookie = `gender=${gender}; path=/`;
 
   
   // 다음 버튼 누르면 fill.html페이지로 이동
