@@ -144,6 +144,7 @@ h2 {
 
 p {
   font-weight: 600;
+  margin-bottom: 15px;
 }
 
 .modal_content {
@@ -154,6 +155,7 @@ p {
 
 
 .close_button {
+  margin-top: 15px;
   width: 60px;
   height: 30px;
   border: none;

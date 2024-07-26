@@ -5,7 +5,9 @@ const birthYearEl = document.querySelector('#birth_year');
 /* option 목록이 이미 생성되었는지를 확인하는 역할 -> 초기값이 false인 이유는 출생연도 옵션이 아직 생성되지 않았다는 의미.
 만약 isYearOptionExisted 변수가 없다면, 사용자가 셀렉트 박스를 클릭할때 마다 1910부터 2024까지의 옵션이 계속 추가 된다.
 동적생성: 처음 셀렉트 박스에 포커스를 맞출 때만 옵션이 생성됨. 이는 페이지 로딩 시 초기화를 지연시키고 필요할 때만 옵션을 생성하여 초기 로딩 시간을 줄이는 장점이 있다.*/
-isYearOptionExisted = false;
+let isYearOptionExisted = false;
+let isMonthOptionExisted = false;
+let isDateOptionExisted = false;
 
 // 불러온 select 요소에 포커스 이벤트리스너 추가 -> select 박스를 클릭하거나 탭으로 이동할 때 함수가 실행됨
 birthYearEl.addEventListener('focus', function() {
@@ -141,11 +143,11 @@ const nextButton = document.getElementById('next_button').addEventListener('clic
   // }
   
   // 쿠기에 값 저장
-  document.cookie = `name=${nameInput.value.trim()}; path=/`;
-  document.cookie = `birthYear=${selectYear.value}; path=/`;
-  document.cookie = `birthMonth=${selectMonth.value}; path=/`;
-  document.cookie = `birthDate=${selectDate.value}; path=/`;
-  document.cookie = `gender=${gender}; paht=/`;
+  document.cookie = `name=${nameInput.value.trim()}; path=/; SameSite=Lax; Secure`;
+  document.cookie = `birthYear=${selectYear.value}; path=/; SameSite=Lax; Secure`;
+  document.cookie = `birthMonth=${selectMonth.value}; path=/; SameSite=Lax; Secure`;
+  document.cookie = `birthDate=${selectDate.value}; path=/; SameSite=Lax; Secure`;
+  document.cookie = `gender=${gender}; paht=/; SameSite=Lax; Secure`;
 
   
   // 다음 버튼 누르면 fill.html페이지로 이동

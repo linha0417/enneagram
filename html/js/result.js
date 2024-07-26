@@ -86,8 +86,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
-
 // 쿠기에서 값 불러오기
 document.getElementById('name').innerText = getCookie('name');
 document.getElementById('birth_year').innerText = getCookie('birthYear');
@@ -105,6 +103,11 @@ function getCookie(name) {
 }
 
 console.log(getCookie('gender'));
+
+//쿠기 접근이 제대로 되는데 테스트. 
+document.addEventListener('DOMContentLoaded', function () {
+  console.log(document.cookie);
+})
 
 
 
