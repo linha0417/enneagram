@@ -82,7 +82,7 @@ const nextButton = document.getElementById('next_button').addEventListener('clic
   // 기본 이벤트를 막기 위한 코드(예: 폼 제출)
   event.preventDefault();
   // 각 태그들 불러오기
-  const nameInput = document.querySelector('.input[placeholder="이름을 입력하세요"]');
+  const nameInput = document.getElementById('input[placeholder="이름을 입력하세요"]');
   const selectYear = document.getElementById('birth_year');
   const selectMonth = document.getElementById('birth_month');
   const selectDate = document.getElementById('birth_date');
