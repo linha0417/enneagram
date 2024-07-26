@@ -24,8 +24,8 @@ body {
 
 #contents {
   margin: auto;
-  width: 300px;
-  height: 250px;
+  width: 250px;
+  height: 330px;
   background-color: white;
   box-shadow: 1px 1px 6px gray;
   border-radius: 10px;
@@ -36,8 +36,8 @@ body {
 
 #info {
   margin: auto;
-  margin-bottom: 20px;
-  width: 300px;
+  margin-bottom: 30px;
+  width: 250px;
 }
 
 li {
@@ -55,13 +55,14 @@ li {
   height: 50px;
   border-radius: 10px;
   border: 1px solid gray;
+  margin-bottom: 10px;
 }
 
 .year, .month, .date {
   height: 50px;
   border-radius: 10px;
   border: 1px solid gray;
-  
+  margin-bottom: 10px;
 }
 
 .month, .date {
@@ -73,6 +74,11 @@ li {
   justify-content: end;
   margin-right: 10px;
   margin-top: 20px;
+}
+
+
+span {
+  margin-right: 10px;
 }
 
 #next_button {
@@ -89,4 +95,16 @@ li {
 #next_button:active {
   background-color: rgb(18, 90, 224);
   box-shadow: 1px 1px 6px rgb(37, 75, 146) inset;
+}
+
+
+label {
+  margin-right: 10px;
+}
+
+@media (max-width: 480px) {
+  #next_button {
+    width: 80px;
+    height: 40px;
+  }
 }
