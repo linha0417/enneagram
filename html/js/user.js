@@ -142,27 +142,15 @@ const nextButton = document.getElementById('next_button').addEventListener('clic
   //   return;
   // }
 
-// 쿠키 설정 시 SameSite와 Secure 속성 추가
-function setCookie(name, value, days = 7) {
-  const date = new Date();
-  date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-  const expires = "expires=" + date.toUTCString();
-  document.cookie = `${name}=${value}; ${expires}; path=/; SameSite=Lax; Secure`;
-}
-// 수정된 쿠키 설정 부분
-setCookie('name', nameInput.value.trim());
-setCookie('birthYear', selectYear.value);
-setCookie('birthMonth', selectMonth.value);
-setCookie('birthDate', selectDate.value);
-setCookie('gender', gender);
+
 
   
   // 쿠기에 값 저장
-  document.cookie = `name=${nameInput.value.trim()}; path=/; SameSite=Lax; Secure`;
-  document.cookie = `birthYear=${selectYear.value}; path=/; SameSite=Lax; Secure`;
-  document.cookie = `birthMonth=${selectMonth.value}; path=/; SameSite=Lax; Secure`;
-  document.cookie = `birthDate=${selectDate.value}; path=/; SameSite=Lax; Secure`;
-  document.cookie = `gender=${gender}; paht=/; SameSite=Lax; Secure`;
+  document.cookie = `name=${nameInput.value.trim()}; path=/ `;
+  document.cookie = `birthYear=${selectYear.value}; path=/`;
+  document.cookie = `birthMonth=${selectMonth.value}; path=/`;
+  document.cookie = `birthDate=${selectDate.value}; path=/`;
+  document.cookie = `gender=${gender}; paht=/`;
 
   
   // 다음 버튼 누르면 fill.html페이지로 이동
