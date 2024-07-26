@@ -141,6 +141,7 @@ const nextButton = document.getElementById('next_button').addEventListener('clic
   //   addrInput.focus();
   //   return;
   // }
+
   
   // 쿠기에 값 저장
   document.cookie = `name=${nameInput.value.trim()}; path=/; SameSite=Lax; Secure`;
