@@ -150,6 +150,7 @@ const nextButton = document.getElementById('next_button').addEventListener('clic
   document.cookie = `birthDate=${selectDate.value}; path=/`;
   document.cookie = `gender=${gender}; path=/`;
 
+  console.log('쿠기 저장됨:', document.cookie);
   
   // 다음 버튼 누르면 fill.html페이지로 이동
   location.href = 'fill.html';
