@@ -84,19 +84,28 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// 쿠키에서 값 불러오기
-document.addEventListener('DOMContentLoaded', function()  {
-  document.querySelector('#name').innerText = getCookie('name');
-  document.getElementById('birth_year').innerText = getCookie('birthYear');
-  document.getElementById('birth_month').innerText = getCookie('birthMonth');
-  document.getElementById('birth_date').innerText = getCookie('birthDate');
-  document.querySelector('#gender').innerText = getCookie('gender');
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('DOMContentLoaded 이벤트 발생'); // 디버깅 메시지
+
+  const name = getCookie('name');
+  const birthYear = getCookie('birthYear');
+  const birthMonth = getCookie('birthMonth');
+  const birthDate = getCookie('birthDate');
+  const gender = getCookie('gender');
+
+  console.log('name:', name); // 디버깅 메시지 추가
+  console.log('birthYear:', birthYear); // 디버깅 메시지 추가
+  console.log('birthMonth:', birthMonth); // 디버깅 메시지 추가
+  console.log('birthDate:', birthDate); // 디버깅 메시지 추가
+  console.log('gender:', gender); // 디버깅 메시지 추가
+
+  document.getElementById('name').innerText = name;
+  document.getElementById('birth_year').innerText = birthYear;
+  document.getElementById('birth_month').innerText = birthMonth;
+  document.getElementById('birth_date').innerText = birthDate;
+  document.getElementById('gender').innerText = gender;
 });
-console.log(document.cookie);
 
-
-
-// 쿠기에서 값 불러오는 함수
 function getCookie(name) {
   let matches = document.cookie.match(new RegExp(
     "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
