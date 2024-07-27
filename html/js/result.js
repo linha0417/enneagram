@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-  console.log('DOMContentLoaded 이벤트 발생'); // 디버깅 메시지
+  console.log('DOMContentLoaded 이벤트 발생'); 
 
   const name = getCookie('name');
   const birthYear = getCookie('birthYear');
@@ -93,17 +93,28 @@ document.addEventListener('DOMContentLoaded', function() {
   const birthDate = getCookie('birthDate');
   const gender = getCookie('gender');
 
-  console.log('name:', name); // 디버깅 메시지 추가
-  console.log('birthYear:', birthYear); // 디버깅 메시지 추가
-  console.log('birthMonth:', birthMonth); // 디버깅 메시지 추가
-  console.log('birthDate:', birthDate); // 디버깅 메시지 추가
-  console.log('gender:', gender); // 디버깅 메시지 추가
+  console.log('name:', name); 
+  console.log('birthYear:', birthYear); 
+  console.log('birthMonth:', birthMonth); 
+  console.log('birthDate:', birthDate); 
+  console.log('gender:', gender); 
 
-  document.getElementById('name').innerText = name;
-  document.getElementById('birth_year').innerText = birthYear;
-  document.getElementById('birth_month').innerText = birthMonth;
-  document.getElementById('birth_date').innerText = birthDate;
-  document.getElementById('gender').innerText = gender;
+  // iOS 웹에서 요소에 접근하는 방식을 점검하고 수정합니다.
+  const nameElement = document.getElementById('name');
+  const birthYearElement = document.getElementById('birth_year');
+  const birthMonthElement = document.getElementById('birth_month');
+  const birthDateElement = document.getElementById('birth_date');
+  const genderElement = document.getElementById('gender');
+
+  if (nameElement && birthYearElement && birthMonthElement && birthDateElement && genderElement) {
+    nameElement.innerText = name || '이름을 입력해주세요';
+    birthYearElement.innerText = birthYear || '출생연도를 입력해주세요';
+    birthMonthElement.innerText = birthMonth || '출생월을 입력해주세요';
+    birthDateElement.innerText = birthDate || '출생일을 입력해주세요';
+    genderElement.innerText = gender || '성별을 입력해주세요';
+  } else {
+    console.error('요소를 찾을 수 없습니다. ID가 올바른지 확인해주세요.');
+  }
 });
 
 function getCookie(name) {
