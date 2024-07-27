@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', function() {
   // 로컬 스토리지에서 점수 가져오기
   const scores = JSON.parse(localStorage.getItem('personalityScores')) || {}; 
@@ -94,6 +92,7 @@ document.addEventListener('DOMContentLoaded', function()  {
   document.getElementById('birth_date').innerText = getCookie('birthDate');
   document.getElementById('gender').innerText = getCookie('gender');
 });
+console.log(document.cookie);
 
 
 // 쿠기에서 값 불러오는 함수
@@ -103,13 +102,6 @@ function getCookie(name) {
   ));
   return matches ? decodeURIComponent(matches[1]) : undefined;
 }
-
-console.log(getCookie('gender'));
-
-//쿠기 접근이 제대로 되는데 테스트. 
-document.addEventListener('DOMContentLoaded', function () {
-  console.log(document.cookie);
-})
 
 
 
