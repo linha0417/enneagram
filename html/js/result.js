@@ -95,6 +95,7 @@ document.addEventListener('DOMContentLoaded', function()  {
 console.log(document.cookie);
 
 
+
 // 쿠기에서 값 불러오는 함수
 function getCookie(name) {
   let matches = document.cookie.match(new RegExp(

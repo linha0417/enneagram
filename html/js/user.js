@@ -81,8 +81,8 @@ birthDate.addEventListener('focus', function() {
 const nextButton = document.getElementById('next_button').addEventListener('click', function(event) {
   // 기본 이벤트를 막기 위한 코드(예: 폼 제출)
   event.preventDefault();
-  // 각 태그들 불러오기
-  const nameInput = document.getElementById('input[placeholder="이름을 입력하세요"]');
+  // input[placeholder="이름을 입력하세요"] 를 사용 하려면 querySelector를 사용해야한다. getElementById 는 문법에 맞지 않음. 그래서 96번줄에서 오류남
+  const nameInput = document.querySelector('input[placeholder="이름을 입력하세요"]');
   const selectYear = document.getElementById('birth_year');
   const selectMonth = document.getElementById('birth_month');
   const selectDate = document.getElementById('birth_date');
