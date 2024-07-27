@@ -114,12 +114,13 @@ td {
   }
 
   p {
-    font-size: large;
+    /* font-size: large; */
+    width: 100%;
   }
 }
 
 /* 태블릿 화면 (최대 900px) */
-@media (max-width: 900px) and (min-width: 601px) {
+@media (max-width: 900px) and (min-width: 480px) {
   #title_result {
     width: 100%;
   }
@@ -169,5 +170,5 @@ td {
     justify-content: end;
   }
 
-
 }
+

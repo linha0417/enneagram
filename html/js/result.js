@@ -108,7 +108,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   if (nameElement && birthYearElement && birthMonthElement && birthDateElement && genderElement) {
     nameElement.innerText = name || '이름을 입력해주세요';
-    nameElement.style.display = 'block';
     birthYearElement.innerText = birthYear || '출생연도를 입력해주세요';
     birthMonthElement.innerText = birthMonth || '출생월을 입력해주세요';
     birthDateElement.innerText = birthDate || '출생일을 입력해주세요';
